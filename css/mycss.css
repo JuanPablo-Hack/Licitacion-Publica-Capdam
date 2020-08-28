@@ -1,0 +1,659 @@
+/*
+azul fuerte: #010066;
+azul medio: #0097db;
+azul bajo: #00aff0;
+gris fuerte: #606062;
+gris bajo: #97989a;
+top,right,bottom,left
+*/ 
+
+@font-face{
+    font-family: "titillium-regular";
+    src: url('../fonts/titillium-regular.ttf');
+}
+
+@font-face{
+    font-family: "titillium-bold";
+    src: url('../fonts/titillium-bold.ttf');
+} 
+
+@font-face{
+    font-family: "titillium-bold-upright";
+    src: url('../fonts/titillium-bold-upright.ttf');
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "titillium-bold-upright";
+} 
+
+span, p, a, label,a, input, select, option, b, table {
+    font-family: "titillium-regular";   
+    font-size: 13pt;
+}
+
+.darkblue {
+  background-color: #010066 !important; 
+} 
+ 
+.middleblue {
+  background-color: #0097db !important;
+}
+
+.lightblue {
+  background-color: #00aff0 !important;
+}
+
+.circulo {
+    width: 220px;
+    height: 220px; 
+    border-radius: 50%;
+    border: 4px solid #00aff0;
+    margin: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo p{ 
+    color: #00aff0;
+    font-size: 15pt;  
+}
+.circulo b{ 
+    font-size: 25pt;  
+}
+
+#descripcion_hagamoshistoria{
+    max-height: 290px;
+    overflow-y: scroll;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+ 
+#descripcion_rural{
+    max-height: 140px;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+#logonavbar {
+    width: 240px;
+}
+
+#imgcontactos{
+    width: 100px;
+}
+
+.nav1 {
+  background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+ 
+.nav1-right,.nav1-banners {
+    float: right;
+}
+
+.nav1-banners {
+    margin-right: 2px;
+}
+
+.nav1-banners img{
+    width: 250px;
+    margin-top: 0px;
+} 
+
+#logo_yt, #logo_fb {
+    width: 55px;
+    margin: 0px 3px 0px 3px; 
+}
+
+#logo_rs { 
+    width: 130px;
+}
+
+#list a{
+    color: black; 
+    cursor: pointer; 
+}
+
+#list .active{
+    background-color: #00aff0;
+    color: white;
+} 
+ 
+blockquote {
+  border-left: 5px solid #010066;
+}
+
+.nav2 {
+    overflow: hidden;
+    width: 100%; 
+    background-color: #00aff0;
+    margin-bottom: 10px;
+} 
+
+.dropdownn  {
+    float: left;
+    overflow: hidden;
+    width: 14.28%;
+    text-align: center;
+}
+
+.dropdownn.active {
+     background-color: #0097db;
+}
+
+.dropdownn:hover .dropbtnn {
+    background-color: #0097db;
+    width: 100%;
+}
+ 
+.dropdownn a{
+    font-size: 10pt;
+    color: white;
+    padding: 6px 0px 6px 0px;
+    display: inline-block;
+}
+
+.dropdown-contentn {
+  display: none;
+  position: absolute;
+  background-color: #00aff0;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-contentn a {
+  float: none;
+  color: white; 
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contentn a:hover {
+    background-color: #0097db;
+}
+
+.dropdownn:hover .dropdown-contentn {
+  display: block;
+}
+
+#imgbtn{
+    width: 100px; 
+    float: left;
+    align-content: center
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #00aff0;
+}
+
+#btninicio1,#btninicio2,#btninicio3{
+    padding: 10px 0px 10px 0px;
+    color: white;
+    font-family: "titillium-bold";   
+}
+
+#btninicio1 img ,#btninicio2 img,#btninicio3 img{
+    margin: 0px 10px 0px 0px;  
+}
+
+#imginicio{
+    width: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item_rural {
+    margin:5px;
+    padding-top: 20px;
+    background-color: #e1f5fe;
+}
+
+.grid-item_rural h4 { 
+    padding-bottom: 20px;
+}
+
+.grid-container_rural {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    padding: 5px; 
+}
+
+.w3-row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+#name_es,#a_paterno,#a_materno, #calle, #numero_e,#numero_i, #telefono, #colonia,#localidad,#name_es_c,#a_paterno_c,#a_materno_c, #e_mail_c,#telefono_c, select, textarea {
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;    
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}  
+textarea{
+    resize: none;
+    height: auto
+}
+
+#enviar_r:hover , #cerrar_modal:hover{
+    background-color: #0097db;
+}
+ 
+div #form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.w3-modal-content{width:400px}
+
+#terceraedad{width:800px}
+
+#tramites_modal_title{
+    padding: 10px; 
+}
+
+@media only screen and (max-width: 600px) {
+    #img_tramite{
+        width: 100%;
+    }
+    #img_circulo {
+      margin-bottom: 10px;
+    }
+
+    #logo_footer{
+      width: 150px !important;
+    }
+
+    #contenido_footer, #logo_footer{
+      display: table !important;
+      margin: 0 auto !important;
+    }
+
+    .nav1-banners img{
+      margin: 10px 0px 5px 0px;
+      width: 49% !important;
+    }
+}
+
+.div_titles{
+    height: 5px;
+    overflow: hidden;
+    background-color: #010066;
+    margin-top: 5px;
+} 
+
+#borde_derecho{
+  margin-left: 30px;
+}
+
+.timeline{
+  --uiTimelineMainColor: var(--timelineMainColor, black);
+  --uiTimelineSecondaryColor: var(--timelineSecondaryColor, white);
+  position: relative;
+    padding-bottom: 50px;
+}
+
+.timeline:before{
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: var(--uiTimelineMainColor);
+  position: absolute;
+  top: 0;
+}
+
+.timeline__group{
+  position: relative;
+}
+
+.timeline__group:not(:first-of-type){
+  margin-top: 80px;
+}
+
+.timeline__year{
+    padding: .5rem 1.5rem;
+    color: var(--uiTimelineSecondaryColor);
+    background-color: var(--uiTimelineMainColor);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 25px;
+}
+
+.timeline__box{
+  position: relative;
+}
+
+.timeline__box:not(:last-of-type){
+  margin-bottom: 25px;
+}
+
+.timeline__box:before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--uiTimelineMainColor);
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.timeline__date{
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  padding: .5rem 1.5rem;
+  background-color: var(--uiTimelineMainColor);
+  color: var(--uiTimelineSecondaryColor);
+}
+
+
+.timeline__month{
+  display: block;
+  font-size: 11pt;
+}
+
+.timeline__post{
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border-left: 4px solid var(--uiTimelineMainColor);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .22), 0 1px 2px 0 rgba(0, 0, 0, .34);
+  background-color: var(--uiTimelineSecondaryColor);
+}
+
+@media screen and (min-width: 641px){
+
+  .timeline:before{
+    left: 50px;
+  }
+
+  .timeline__group{
+    padding-top: 70px; 
+  }
+
+  .timeline__box{
+    padding-left: 150px;
+  }
+
+  .timeline__box:before{
+    top: 50%;
+    transform: translateY(-50%);  
+  }  
+
+  .timeline__date{
+    top: 50%;
+    margin-top: -19px;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  .timeline:before{
+    left: 0;
+  }
+
+  .timeline__group{
+    padding-top: 40px;
+  }
+
+  .timeline__box{
+    padding-left: 20px;
+    padding-top: 70px;
+  }
+
+  .timeline__box:before{
+    top: 90px;
+  }    
+
+  .timeline__date{
+    top: 0;
+  }
+}
+
+.timeline{
+  --timelineMainColor: #010066;
+}
+
+p{ 
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+#tipo_de_modulo p{
+    font-size: 13pt;
+}
+
+#tipo_de_modulo{
+    background-color: #00aff0;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+#contenido_card{
+    padding: 10px;
+    height: 120px;
+}
+
+#contenido_card p, #contenido_card b{
+    font-size: 12pt;   
+}
+
+#contenido_card, #tipo_de_modulo{
+  overflow-y: auto;  
+}
+
+#contenido_card_2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card .card-content{
+    padding: 0px;
+}
+
+#recurso, #empresa,#importe, #procedimiento{
+    background-color: #0097db;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 5px;
+    color:white;
+    font-size: 11pt;
+}
+
+#empresa{
+    background-color: #00c853;
+}
+
+#importe{
+    background-color: #ffb300;
+}
+
+#procedimiento{
+    background-color: #ff7043;
+}
+
+#simbologia{
+    border: 1.5px solid black;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center; 
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#tramite_card{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tramite_card span{
+   font-size: 17pt;
+}
+
+#licitacion, #licitacion_w{
+    border: 3px solid #010066;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+ 
+#licitacion_w{
+    border: 1.5px solid white;
+    padding: 3px;
+}
+
+#licitacion a{
+    font-size: 15pt;
+}
+
+#td1{
+    width: 80%;
+    padding: 5px;
+}
+
+#td2{
+    width: 20%;
+    padding: 5px;
+}
+
+th{
+    padding: 0px;    
+}
+
+#titulo_directorio{
+    background-color: #0097db;
+    color: white;
+    padding: 5px;
+}
+
+#telefono_directorio{
+    font-size: 25pt;
+}
+
+#telefono_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#td1_1{
+    width: 80%;
+    padding: 5px;
+}
+
+#td2_2{
+    width: 10%;
+    padding: 5px;    
+}
+#td3_3{
+    width: 10%;
+    padding: 5px;
+}
