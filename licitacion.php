@@ -379,11 +379,16 @@
                         <tbody>
                             <script>
                                 var archivos = [
-                                    ['Convocatoria','CONVOCATORIA ESTATAL 001-19.pdf'],
+                                    ['Convocatoria 001','CONVOCATORIA ESTATAL 001-19.pdf'],
+                                    ['Convocatoria 002','CONVOCATORIA CAPDAM-FISM-PE-2020-002.pdf'],
+                                    ['Convocatoria 003','CONVOCATORIA CAPDAM-FISM-PE-2020-003.pdf'],
                                     ['LOE-CAPDAMF4-20','LOE-CAPDAMF4-20.pdf'],
                                     ['LOE-CAPDAMF6-20','LOE-CAPDAMF6-20.pdf'],
                                     ['LOE-CAPDAMF9-20','LOE-CAPDAMF9-20.pdf'],
-                                    ['LOE-CAPDAMF10-20','LOE-CAPDAMF10-20.pdf']
+                                    ['LOE-CAPDAMF10-20','LOE-CAPDAMF10-20.pdf'],
+                                    ['LOE-CAPDAMF8-20','LISTA JUNTA ACLARACIONES LOE-F8-20.pdf'],
+                                    ['LOE-CAPDAMF15-20','ACTA JUNTA ACLARACIONES LOE-F15-20.pdf']
+
                                 ];  
                                 for(var i=1; i<=(archivos.length); i++){
                                     document.write(
